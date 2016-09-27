@@ -33,12 +33,14 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.lstOutputBox = new System.Windows.Forms.ListBox();
             this.lstInputBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SearchPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchPanel
             // 
             this.SearchPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SearchPanel.Controls.Add(this.button1);
             this.SearchPanel.Controls.Add(this.btnDeselect);
             this.SearchPanel.Controls.Add(this.btnSelect);
             this.SearchPanel.Controls.Add(this.lstOutputBox);
@@ -88,6 +90,16 @@
             this.lstInputBox1.TabIndex = 0;
             this.lstInputBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lstInputBox_KeyDown);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(250, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.ListBox lstInputBox1;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnDeselect;
+        private System.Windows.Forms.Button button1;
     }
 }
 

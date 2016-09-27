@@ -132,5 +132,14 @@ namespace MockWInApp
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            var form3 = new Form2();
+            form3.MdiParent = this.ParentForm;
+            this.Close();
+            form3.Show();
+        }
     }
 }
