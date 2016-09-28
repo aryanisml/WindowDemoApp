@@ -19,8 +19,8 @@ namespace MockWInApp
             InitializeComponent();
 
             this.WindowState = FormWindowState.Maximized;
-            this.MinimumSize = this.Size;
-            this.MaximumSize = this.Size;
+         //   this.MinimumSize = this.Size;
+         //   this.MaximumSize = this.Size;
 
 
         }

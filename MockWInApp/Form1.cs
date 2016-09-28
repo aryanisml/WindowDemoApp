@@ -135,11 +135,12 @@ namespace MockWInApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            var form3 = new Form2();
-            form3.MdiParent = this.ParentForm;
+            HelperMock.name = "Hello Swapnil";
+
+            var form2 = new Form2();
+            form2.MdiParent = this.ParentForm;
             this.Close();
-            form3.Show();
+            form2.Show();
         }
     }
 }

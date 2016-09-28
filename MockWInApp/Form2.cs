@@ -16,5 +16,15 @@ namespace MockWInApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(HelperMock.name.ToString());
+            string s = "123";
+            var form3 = new Form3(s);
+            form3.MdiParent = this.ParentForm;
+            this.Close();
+            form3.Show();
+        }
     }
 }

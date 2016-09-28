@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.SearchPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnDeselect = new System.Windows.Forms.Button();
             this.btnSelect = new System.Windows.Forms.Button();
             this.lstOutputBox = new System.Windows.Forms.ListBox();
             this.lstInputBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SearchPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,16 @@
             this.SearchPanel.Name = "SearchPanel";
             this.SearchPanel.Size = new System.Drawing.Size(554, 255);
             this.SearchPanel.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(250, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnDeselect
             // 
@@ -90,16 +100,6 @@
             this.lstInputBox1.TabIndex = 0;
             this.lstInputBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lstInputBox_KeyDown);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(250, 173);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +107,7 @@
             this.ClientSize = new System.Drawing.Size(582, 282);
             this.Controls.Add(this.SearchPanel);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.SearchPanel.ResumeLayout(false);
             this.ResumeLayout(false);
