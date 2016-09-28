@@ -15,6 +15,7 @@ namespace MockWInApp
         public Form1()
         {
             InitializeComponent();
+            this.ControlBox = false;
             FillList1();
 
 

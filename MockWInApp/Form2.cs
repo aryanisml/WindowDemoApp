@@ -15,6 +15,7 @@ namespace MockWInApp
         public Form2()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +26,16 @@ namespace MockWInApp
             form3.MdiParent = this.ParentForm;
             this.Close();
             form3.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form1 = new Form1();
+            form1.MdiParent = this.ParentForm;
+            this.Close();
+            form1.Show();
+
         }
     }
 }

@@ -15,6 +15,7 @@ namespace MockWInApp
         public Form3(string s)
         {
             InitializeComponent();
+            this.ControlBox = false;
             MessageBox.Show(s);
             FillDataGrid();
         }
