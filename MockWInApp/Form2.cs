@@ -20,7 +20,7 @@ namespace MockWInApp
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(HelperMock.name.ToString());
-            string s = "123";
+            string s = DateTime.Now.ToString("yyyyMMddHHmmssfff");
             var form3 = new Form3(s);
             form3.MdiParent = this.ParentForm;
             this.Close();
