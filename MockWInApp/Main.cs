@@ -20,8 +20,8 @@ namespace MockWInApp
             InitializeComponent();
 
             this.WindowState = FormWindowState.Maximized;
-         //   this.MinimumSize = this.Size;
-         //   this.MaximumSize = this.Size;
+            //   this.MinimumSize = this.Size;
+            //   this.MaximumSize = this.Size;
 
 
         }
@@ -29,10 +29,10 @@ namespace MockWInApp
         private void searchMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new Form1();
-            form.MdiParent = this;        
+            form.MdiParent = this;
             form.Show();
 
-            
+
         }
 
         private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,6 +43,16 @@ namespace MockWInApp
             }
 
 
+        }
+
+        private void goToToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(
+        "test", "Visit", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk
+    ) == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("file:///d:/Swapnil/DateFunction.txt");
+            }
         }
     }
 }
